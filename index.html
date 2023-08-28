@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>
+		A Sample Tutorial for database connection.
+	</title>
+</head>
+<body bgcolor="#32e692">
+	<div align="center">
+		<!--<h1>Details Entry Form</h1>-->
+	</div>
+<form action="details_entry.php" method="post">
+	<table border="1" align="center">
+		<tr>
+			<td>
+			<label>USN</label></td>
+			<td><input type="number" name="usn"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Name</label></td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>DOB</label></td>
+			<td><input type="date" placeholder="yyyy-mm-dd" name="dob"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Gender</label></td>
+			<td><input type="radio" name="gender" value="M">Male
+			<input type="radio" name="gender" value="F">Female</td>
+		</tr>
+		<tr>
+			<td><label for="dept">Department</label></td>
+			<td><select name="dept" id="dept">
+  				<option value="1" selected>ISE</option>
+  				<option value="2">CSE</option>
+  				<option value="3">ECE</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

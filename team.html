@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Project DBMS</title>
+
+</head>
+<body>
+
+  <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <a href="start.html"><div class="logo">
+                  <img src="bmsce.png" height="60x" width="60px">
+               </div></a>
+               
+               <div class="menu">
+                  <ul>
+                     <li><a href="team.html">Team</a></li>
+                     <li><a href="project.html">Project</a></li>                   
+                     <li><a href="faculty.html">Faculty</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+
+<div class="title"><h1>Project Management Interface</h1></div>
+
+  <div class="container" id="container">
+    <div class="form-container">
+      <form action="details_entry2.php" method="post">
+        <br><br><h1>Team Details</h1><br><br>
+        <input type="number" name="tid" placeholder="Team ID" required/>
+        <input type="number" name="nop" placeholder="Size max(3)" max="3" required="" />
+        <input placeholder="Course ID" name="cid" type="number" required/>
+        <input placeholder="Team Member USN" name="usn1" type="number"/>
+        <input placeholder="Team Member USN" name="usn2" type="number"/>
+        <input placeholder="Team Member USN" name="usn3" type="number"/>
+        <br>
+        <button type="submit" name="save" value="Submit" style="margin-bottom: 15px">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/*create table student(
+usn int primary key,
+sname varchar(50),
+dob date,
+gender varchar(10),
+deptid int
+);
+create table department(
+deptid int primary key,
+dname varchar(50),
+hod varchar(50)
+);
+create table faculty(
+    fid int primary key,
+    fname varchar(50),
+    deptid int
+);
+create table team(
+    tid int primary key,
+    nop int,
+    cid int
+);
+create table course(
+    cid int primary key,
+    cname varchar(50),
+    deptid int 
+);
+create table project(
+    pid int ,
+    tid int,
+    cid int,
+    fid int,
+    title varchar(50),
+    primary key(pid,cid)
+);
+create table team_mem(
+    tid int,
+    usn int 
+);
+alter table student add foreign key (deptid) references department (deptid
+);
+alter table course add foreign key (deptid) references department (deptid
+);alter table faculty add foreign key (deptid) references department (deptid
+);
+alter table project add foreign key (tid) references team (tid);
+alter table project add foreign key (cid) references course (cid);
+alter table project add foreign key (fid) references faculty (fid);
+alter table team_mem add foreign key (tid) references team (tid);
+alter table team_mem add foreign key (usn) references student (usn);
+insert into department values(1,'ISE','Jayarekha');
+insert into department values(2,'CSE','Rahul');
+insert into department values(3,'ECE','Ramesh');
+insert into faculty values(101,'Roopa R',1);
+insert into faculty values(102,'Suresh N',2);
+insert into faculty values(103,'Sindhu K',1);
+insert into student values(1001,'Abhay','2002/10/15','M',1);
+insert into student values(1002,'Amar','2002/04/10','M',1);
+insert into student values(1003,'Anirudh','2002/02/11','M',1);
+insert into student values(1004,'Bhoomika','2002/07/25','F',1);
+insert into student values(1005,'Bharath','2002/08/08','M',1);
+insert into student values(1006,'Bumrah','2002/09/10','M',1);
+insert into course values(11,'DBMS',1);
+insert into course values(12,'ADA',1);
+insert into course values(13,'TFC',1);
+insert into team values(201,3,11);
+insert into team values(202,3,11);
+insert into project values(1,201,11,101,'Hotel Management');
+insert into project values(2,202,11,103,'Library Database');
+insert into team_mem values(201,1001);
+insert into team_mem values(201,1002);
+insert into team_mem values(201,1003);
+insert into team_mem values(202,1004);
+insert into team_mem values(202,1005);
+insert into team_mem values(202,1006);
+select * from department;*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Project DBMS</title>
+
+</head>
+<body>
+
+  <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img src="bmsce.png" height="60x" width="60px">
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="team.html">Team</a></li>
+                     <li><a href="project.html">Project</a></li>                   
+                     <li><a href="faculty.html">Faculty</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+
+<div class="title"><h1>Project Management Interface</h1></div>
+
+  <div class="container" id="container">
+    <div class="form-container">
+      <form action="details_entry.php" method="post">
+        <br><br><h1>Student Details</h1><br><br>
+        <input type="number" name="usn" placeholder="USN" required />
+        <input type="text" name="name" placeholder="Name" required/>
+        <input placeholder="DOB" name="dob" type="text" onfocus="(this.type='date')" required>
+        <input type="text" name="gender" placeholder="Gender" list="gen" required>
+    <datalist id="gen">
+      <option value="M">Male</option>
+          <option value="F">Female</option>
+    </datalist>
+        <input type="text" name="dept" placeholder="Department" list="dept" required>
+    <datalist id="dept">
+          <option value="1">ISE</option>
+          <option value="2">CSE</option>
+          <option value="3">ECE</option>
+    </datalist><br>
+        <button type="submit" name="save" value="Submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
